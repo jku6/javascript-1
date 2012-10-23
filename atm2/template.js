@@ -4,7 +4,8 @@ $(function(){
         $('.b1').click(deposit);
 });
 
-var balance = 1000;
+var balance = 1000; 
+// this is a global value
 
 function withdraw()
 {
@@ -42,3 +43,6 @@ function deposit()
         $('#balance > h2').css('color','black');
     }
 }
+
+// could also create a updateBalance function, then function updateBalance()
+// have a text action, also if balance < 0 blah blah else blah blah css
