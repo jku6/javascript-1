@@ -1,3 +1,8 @@
+var balance = 850;
+var balance2 = 1000; 
+var total = balance + balance2
+// this is a global value
+
 $(function(){
    
         $('.b2').click(withDraw);
@@ -6,11 +11,6 @@ $(function(){
         $('.b3').click(deposit2);
 
 });
-
-var balance = 850;
-var balance2 = 1000; 
-var total = balance + balance2
-// this is a global value
 
 function withDraw()
 {
@@ -28,6 +28,9 @@ function withDraw()
         balance = 0;
         balance2 = balance2 - remainder;
         total = balance2;
+
+        //could also do total = total - withdraw
+
     }
 
     $('#balance > h2').text('$' + balance); 
