@@ -15,12 +15,12 @@ body {
 	width: 35px;
 	height: 35px;
 	margin: 20px;
-}
+} /*the class applied to all color boxes created*/
 
 .sc
 {
 	border: 4px #78040D solid;
-}
+} /*my selected class*/
 
 header
 {
