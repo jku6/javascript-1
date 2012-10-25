@@ -35,9 +35,12 @@ function add_colors()
 
 function bgChange()
 {
-	var current = $(this).css('background-color');
-	console.log(current);
-	$('#input').css('background-color', current);
+	if (enable == true)
+	{
+		var current = $(this).css('background-color');
+		console.log(current);
+		$('#input').css('background-color', current);
+	}
 }
 
 function bgReturn()
@@ -52,7 +55,7 @@ function select()
 {
 	if (selected != null)
 	{
-		enable = false;
+		// enable = false;
 		selected.removeClass('sc');
 		selected = $(this);
 		$(this).addClass('sc');
@@ -61,12 +64,14 @@ function select()
 	}
 	else
 	{
-		enable = false;
+		// enable = false;
 		selected = $(this);
 		$(this).addClass('sc');
 		var current = $(this).css('background-color');
 		$('#input').css('background-color', current);
 	}
+
+	enable = false;
 	
 }
 

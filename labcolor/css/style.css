@@ -1,17 +1,104 @@
+body {
+	background: url('../bg.jpeg');
+	/* the follow is the code to have the image display as a full page */
+	background-position: center;
+	background-attachment: fixed;
+	-webkit-background-size: cover; /* the next 3 lines are "browser prefixes", they are necessary to include for CSS3 techniques */
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
 .a
 {
 	float: left;
-	width: 50px;
-	height: 50px;
-	border: 1px dashed #252525;
+	width: 35px;
+	height: 35px;
 	margin: 20px;
 }
 
 .sc
 {
-	border: 2px #000 solid;
+	border: 4px #78040D solid;
 }
 
+header
+{
+	width: 600px;
+	margin: 20px auto;
+}
+
+h1
+{
+	font-size: 50px;
+	font-family: 'Exo', sans-serif;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.red
+{
+	font-size: 70px;
+	color: #78040D;
+}
+
+#main
+{
+	width: 600px;
+	margin: 0 auto;
+	background: ;
+}
+
+#input {
+	width: 300px;
+	height: 50px;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border:1px solid #dedede;
+	padding:5px;
+	font-size:20px;
+	color: #78040D;
+	font-family: 'Exo', sans-serif;
+	float: left;
+	margin-right: 5px;
+}
+
+	input:focus {
+		border:1px solid #78040D;
+	}
+
+#add, #left, #right {
+	width: 80px;
+	height: 50px;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	border:1px solid #dedede;
+	padding:5px;
+	font-size:20px;
+	background: #78040D;
+	color: #FFF;
+	font-family: 'Exo', sans-serif;
+	float: left;
+	margin: 0 5px;
+}
+
+#left, #right {
+	font-size: 36px;
+	text-align: center;
+	line-height: 40px;
+}
+
+	#add:hover, #left:hover, #right:hover {
+	background: #2c0105;
+}
+
+#results {
+	width: 600px;
+	margin: 20px auto;
+	min-height: 100px;
+}
 /* Box Model Hack */
 * {
      -moz-box-sizing: border-box; /* Firexfox */
@@ -46,5 +133,7 @@
 /* Center the container */
 #container {
 	width: 960px;
-	margin: auto;
+	margin: 20px auto;
+	background: white;
+	padding: 15px;
 }
